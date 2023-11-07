@@ -1,9 +1,9 @@
-import profile1 from '../Assests/facultyProfile.png'
+import facultyProfile from '../Assests/facultyProfile.png'
 
 const facultyList=[
     {
         id:101,
-        img:profile1,
+        img:facultyProfile,
         name:'Mohini',
         domain:"Data Scientist",
         workExp:5,
@@ -12,7 +12,7 @@ const facultyList=[
     },
     {
         id:102,
-        img:profile1,
+        img:facultyProfile,
         name:'Chris Hames',
         domain:"Artificial Integillence",
         workExp:5,
@@ -21,7 +21,7 @@ const facultyList=[
     },
     {
         id:102,
-        img:profile1,
+        img:facultyProfile,
         name:'Chris Hames',
         domain:"Artificial Integillence",
         workExp:5,
@@ -30,7 +30,7 @@ const facultyList=[
     },
     {
         id:102,
-        img:profile1,
+        img:facultyProfile,
         name:'Chris Hames',
         domain:"Artificial Integillence",
         workExp:5,
@@ -39,7 +39,7 @@ const facultyList=[
     },
     {
         id:102,
-        img:profile1,
+        img:facultyProfile,
         name:'Chris Hames',
         domain:"Artificial Integillence",
         workExp:5,
