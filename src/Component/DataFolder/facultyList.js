@@ -1,4 +1,4 @@
-import facultyProfile from '../Assests/facultyProfile.png'
+import facultyProfile from '../Assests/FacultyProfile.png'
 
 const facultyList=[
     {
