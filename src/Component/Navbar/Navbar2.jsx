@@ -8,22 +8,19 @@ const Navbar2 = () => {
             <div className='flex justify-around items-center'>
                 <div className='flex gap-2 items-center'>
                     <p>Courses</p>
-                    <select name="" id="" className='bg-transparent'>
-                        
-                        
-                    </select>
+                    
                 </div>
 
                 <div className='flex gap-2 items-center'>
                     <img src={desktop} alt="" />
-                    <p>Your Dashboard</p>
+                    <p className='hidden md:block lg:block'>Your Dashboard</p>
                 </div>
 
                 <div>Checkout</div>
             </div>
 
-            
         </div>
+        
     </>
   )
 }

@@ -12,9 +12,9 @@ const Checkout = () => {
         <Navbar2/>
         <div className='max-w-[700px] mt-8 mx-3 md:mx-auto lg:mx-auto p-4 px-5  pt-8 shadow-md shadow-black rounded-xl bg-gradient-to-br from-yellow-300  to-black text-black'>
             <div className='flex justify-between gap-3'>
-                <img src={checkoutImage} alt="" className='w-[25%]'/>
+                <img src={checkoutImage} alt="" className='w-[25%] hidden md:block lg:block'/>
                 <div className='flex flex-col justify-around'>
-                    <h1 className='text-xl font-bold'>Decode Data Science with Machine Learning 1.0</h1>
+                    <h1 className='text-xl font-bold '>Decode Data Science with Machine Learning 1.0</h1>
                     <div className='flex items-center flex-col lg:flex-row  mt-2 gap-4 rounded-md'>
                         <h2 className='text-red-600 font-bold'>Have any coupen ?</h2>
                         <div className='relative  flex-1 bg-white rounded-md'>

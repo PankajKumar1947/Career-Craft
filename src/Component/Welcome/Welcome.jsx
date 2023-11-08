@@ -24,13 +24,13 @@ const Welcome = () => {
             {/* right */}
             <div className=''>
                 <h1 className='text-3xl text-center'>Get Started with Career Craft Now !</h1>
-                <p className='lg:px-10 px-5 mt-3 text-yellow-200'>"Career Craft: Yur Gateway to Data Science Excellence! Explore our comprehensive data science course tailored for success. Dive into the world of data analytics, machine learning, and AI with expert guidance. Start your journey to a lucrative data science career today!"</p>
+                <p className='lg:px-10  mt-3 text-yellow-200'>"Career Craft: Yur Gateway to Data Science Excellence! Explore our comprehensive data science course tailored for success. Dive into the world of data analytics, machine learning, and AI with expert guidance. Start your journey to a lucrative data science career today!"</p>
                 <Link to={"explore"}><div className=' mt-8 bg-yellow-500 cursor-pointer hover:bg-yellow-600 text-center mx-8 rounded-md'>
                      <button className=' shadow-md  py-3 text-black font-semibold'>Examine Courses</button>
                 </div>
                 </Link>
 
-                <div className='lg:px-10 px-5 mt-5 grid grid-cols-2 gap-6'>
+                <div className='lg:px-10  mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-between'>
                     <div className='flex gap-3 items-center'>
                         <img src={icon1} alt="" />
                         <div>
