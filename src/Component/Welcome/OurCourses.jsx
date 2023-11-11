@@ -68,7 +68,6 @@ const OurCourses = () => {
                 src={unchecked}
                 alt=""
                 className='cursor-pointer hover:scale-105 bg-white w-[40px] p-1 rounded-xl'
-                onClick={previousCourse}
               />
               
               <img
