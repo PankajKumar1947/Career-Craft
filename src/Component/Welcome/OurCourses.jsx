@@ -24,38 +24,68 @@ const OurCourses = () => {
   return (
     <>
         <div className='max-w-[92%] mx-auto mt-5 text-black'>
-            <h1 className='text-3xl font-semibold text-center'>Our Courses</h1>
+            <h1 className='text-3xl font-semibold text-center text-white'>Our Courses</h1>
             <ul className='flex  justify-center mt-3 gap-2'>
-                <li className='bg-green-200 px-3 py-1 rounded-sm shadow-md shadow-gray-600 hover:bg-green-400 cursor-pointer'>Trending</li>
-                <li className='px-7 py-1 bg-white rounded-sm shadow-md shadow-gray-600 hover:bg-green-400 cursor-pointer'>Live</li>
-                <li className='px-3 py-1 bg-white rounded-sm shadow-md shadow-gray-600 hover:bg-green-400 cursor-pointer'>View All </li>
+                <li
+                className='bg-green-200 px-3 py-1 rounded-sm shadow-md shadow-gray-600 hover:bg-green-400 cursor-pointer'
+                >Trending</li>
+                <li
+                className='px-7 py-1 bg-white rounded-sm shadow-md shadow-gray-600 hover:bg-green-400 cursor-pointer'
+                >Live</li>
+                <li 
+                className='px-3 py-1 bg-white rounded-sm shadow-md shadow-gray-600 hover:bg-green-400 cursor-pointer'>View All </li>
             </ul>
         </div>
 
         {/* Courses */}
 
-        <div className='max-w-[740px] mx-auto px-3'>
-          <div className='flex justify-center transition ease-out duration-300 '
-          >
-            {courseList.map((crs,i)=>(
-              <div className={`${i==current ? 'block' :'hidden'}`}>               
-                <Courses key={"course"+i} eachCourse={courseList[i]}/>
-              </div>
-            ))}
+        <div className='flex flex-col justify-center items-center gap-4  overflow-hidden'>
+            <div className='flex'>
+              {courseList.map((crs, index) => (
+                <div
+                  key={crs.id}
+                  className={`flex-shrink-0 ${index === current ? 'block' : 'hidden'}`}
+                  style={{ minWidth: '100%' }}
+                >
+                  <Courses eachCourse={crs} />
+                </div>
+              ))}
+            </div>
+            <div className='flex justify-center items-center gap-4'>
+              <img
+                src={unchecked}
+                alt=""
+                className='cursor-pointer hover:scale-105 bg-white w-[25px] p-1 rounded-xl'
+                onClick={previousCourse}
+              />
+              <img
+                src={unchecked}
+                alt=""
+                className='cursor-pointer hover:scale-105 bg-white w-[30px] p-1 rounded-xl'
+                onClick={previousCourse}
+              />
+              <img
+                src={unchecked}
+                alt=""
+                className='cursor-pointer hover:scale-105 bg-white w-[40px] p-1 rounded-xl'
+                onClick={previousCourse}
+              />
+              
+              <img
+                src={unchecked}
+                alt=""
+                className='cursor-pointer hover:scale-105 bg-white w-[30px] p-1 rounded-xl'
+                onClick={nextCourse}
+              />
+              <img
+                src={unchecked}
+                alt=""
+                className='cursor-pointer hover:scale-105 bg-white w-[25px] p-1 rounded-xl'
+                onClick={nextCourse}
+              />
+            </div>
           </div>
-          
-        </div>
-       
-        
 
-
-        <div className='flex justify-center items-center gap-4 mt-5'>
-        <img src={unchecked} alt=""  className='cursor-pointer hover:scale-105 bg-white p-1 rounded-xl ' onClick={previousCourse}/>
-        <img src={unchecked} alt="" className='cursor-pointer hover:scale-105 bg-white p-1 rounded-xl ' onClick={previousCourse}/>
-        <img src={checkedIcon} alt=""  className='cursor-pointer hover:scale-105 bg-white p-1 rounded-xl '/>
-        <img src={unchecked} alt="" className='cursor-pointer hover:scale-105 bg-white p-1 rounded-xl ' onClick={nextCourse}/>
-        <img src={unchecked} alt=""  className='cursor-pointer hover:scale-105 bg-white p-1 rounded-xl ' onClick={previousCourse}/>
-      </div>
 
         
     </>
