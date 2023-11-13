@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 import Courses from './Courses'
-import checkedIcon from '../Assests/checkedCircleIcon.png'
 import unchecked from '../Assests/circle.png'
 import courseList from '../DataFolder/course'
 
 const OurCourses = () => {
   let [current,setCurrent]=useState(0);
+  const [category,setCategory]=useState("Trending");
 
   let previousCourse=()=>{
     if(current===0)
-      setCurrent(courseList.length-1);
+      setCurrent(courseList[category].length-1);
     else
       setCurrent(current-1);
   }
 
   let nextCourse=()=>{
-    if(current===courseList.length-1)
+    if(current===courseList[category].length-1)
       setCurrent(0);
     else
       setCurrent(current+1);
@@ -27,13 +27,15 @@ const OurCourses = () => {
             <h1 className='text-3xl font-semibold text-center text-white'>Our Courses</h1>
             <ul className='flex  justify-center mt-3 gap-2'>
                 <li
-                className='bg-green-200 px-3 py-1 rounded-sm shadow-md shadow-gray-600 hover:bg-green-400 cursor-pointer'
+                onClick={()=>setCategory("Trending")}
+                className={`${category==="Trending" ? "bg-green-300" : "bg-white"} bg-green-200  px-3 py-1 rounded-sm shadow-md  hover:bg-green-400 cursor-pointer`}
                 >Trending</li>
                 <li
-                className='px-7 py-1 bg-white rounded-sm shadow-md shadow-gray-600 hover:bg-green-400 cursor-pointer'
+                onClick={()=>setCategory("Live")}
+                className={`${category==="Live" ? "bg-green-300 " : "bg-white"} px-7 py-1 bg-white rounded-sm shadow-md  hover:bg-green-400 cursor-pointer`}
                 >Live</li>
                 <li 
-                className='px-3 py-1 bg-white rounded-sm shadow-md shadow-gray-600 hover:bg-green-400 cursor-pointer'>View All </li>
+                className='px-3 py-1 bg-white rounded-sm shadow-md  hover:bg-green-400 cursor-pointer'>View All </li>
             </ul>
         </div>
 
@@ -41,7 +43,7 @@ const OurCourses = () => {
 
         <div className='flex flex-col justify-center items-center gap-4  overflow-hidden'>
             <div className='flex'>
-              {courseList.map((crs, index) => (
+              {courseList[category].map((crs, index) => (
                 <div
                   key={crs.id}
                   className={`flex-shrink-0 ${index === current ? 'block' : 'hidden'}`}
