@@ -28,11 +28,11 @@ const OurCourses = () => {
             <ul className='flex  justify-center mt-3 gap-2'>
                 <li
                 onClick={()=>setCategory("Trending")}
-                className={`${category==="Trending" ? "bg-green-300" : "bg-white"} bg-green-200  px-3 py-1 rounded-sm shadow-md  hover:bg-green-400 cursor-pointer`}
+                className={`${category==="Trending" ? "bg-green-300" : "bg-white"}  px-3 py-1 rounded-sm shadow-md  hover:bg-green-400 cursor-pointer`}
                 >Trending</li>
                 <li
                 onClick={()=>setCategory("Live")}
-                className={`${category==="Live" ? "bg-green-300 " : "bg-white"} px-7 py-1 bg-white rounded-sm shadow-md  hover:bg-green-400 cursor-pointer`}
+                className={`${category==="Live" ? "bg-green-300 " : "bg-white"} px-7 py-1 rounded-sm shadow-md  hover:bg-green-400 cursor-pointer`}
                 >Live</li>
                 <li 
                 className='px-3 py-1 bg-white rounded-sm shadow-md  hover:bg-green-400 cursor-pointer'>View All </li>
