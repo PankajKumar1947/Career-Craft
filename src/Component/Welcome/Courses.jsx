@@ -12,8 +12,8 @@ const Courses = ({eachCourse}) => {
 
   return (
     <>
-    <div className='w-full mt-8 p-2 lg:pt-3 lg:px-4 pb-3 rounded-xl bg-gray-800'>
-        <div className='p-2 lg:p-3 rounded-xl flex justify-between  flex-col md:flex-row lg:flex-row md:gap-3  bg-yellow-300'>
+    <div className=' mt-8 p-3 lg:pt-3 lg:px-4 pb-3 rounded-xl bg-gray-800 '>
+        <div className='p-2 lg:p-3 rounded-xl flex justify-between  flex-col md:flex-row lg:flex-row md:gap-3  bg-yellow-300 '>
             <div className=' w-[100%] md:w-[50%]  lg:w-[50%] '>
                 <img src={eachCourse.img} alt="" className='h-[150px] md:h-[200px] lg:h-[200px]  w-[100%] rounded-t-xl md:rounded-xl lg:rounded-xl ' />
             </div>
@@ -49,7 +49,7 @@ const Courses = ({eachCourse}) => {
 
         <div className='flex justify-center gap-2 lg:gap-4 items-center mt-2'>
             <button
-            onClick={()=>{navigate('/explore',{replace:true, state:{eachCourse} })}}
+            onClick={()=>{navigate('/explore',{replace:false, state:{eachCourse} })}}
             className='bg-yellow-500 font-semibold px-4 md:px-6 text-sm lg:px-8 py-2 rounded-md hover:bg-yellow-600'>Enroll Now</button>
             <i className="fa-solid fa-cart-shopping text-2xl"></i>
             <button className='bg-yellow-500 font-semibold px-4 md:px-6 text-sm lg:px-8 py-2 rounded-md hover:bg-yellow-600'>Add to Cart</button>

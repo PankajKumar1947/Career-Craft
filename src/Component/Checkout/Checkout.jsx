@@ -15,15 +15,15 @@ const Checkout = () => {
     <>
         <Navbar1/>
         <Navbar2/>
-        <div className='max-w-[700px] mt-8 mx-3 md:mx-auto lg:mx-auto p-4 px-5  pt-8 shadow-md shadow-black rounded-xl bg-gradient-to-br from-yellow-300  to-black text-black'>
-            <div className='flex justify-between gap-3'>
-                <img src={checkoutImage} alt="" className='w-[25%] hidden md:block lg:block'/>
-                <div className='flex flex-col justify-around'>
-                    <h1 className='text-xl font-bold '>{checkoutData.title}</h1>
+        <div className='max-w-[700px] mt-8 mx-3 md:mx-auto lg:mx-auto p-4 px-2 lg:px-5  lg:pt-8 shadow-md shadow-black rounded-xl bg-gradient-to-br from-yellow-300  to-black text-black'>
+            <div className='flex justify-center gap-3'>
+                <img src={checkoutImage} alt="" className='w-[200px] h-[150px] hidden md:block lg:block'/>
+                <div className='flex flex-col justify-around flex-1'>
+                    <h1 className='text-xl font-bold  '>{checkoutData.title}</h1>
                     <div className='flex items-center flex-col lg:flex-row  mt-2 gap-4 rounded-md'>
                         <h2 className='text-red-600 font-bold'>Have any coupen ?</h2>
-                        <div className='relative  flex-1 bg-white rounded-md'>
-                            <input type="text" className='w-full px-2 py-1 rounded-md' placeholder='Enter your coupen code ' />
+                        <div className='relative w-full   bg-white rounded-md'>
+                            <input type="text" className='w-full px-2 py-1 rounded-md placeholder-text-xs' placeholder='Enter your coupen code ' />
                             <button className='absolute right-0 top-0 bg-green-500 hover:bg-green-600 text-white rounded-md px-3 py-1'>Apply</button>
                         </div>
                     </div>

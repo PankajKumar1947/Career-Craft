@@ -1,5 +1,6 @@
 import React from 'react'
 import desktop from '../Assests/desktop.png'
+import { Link } from 'react-router-dom'
 
 const Navbar2 = () => {
   return (
@@ -11,10 +12,12 @@ const Navbar2 = () => {
                     
                 </div>
 
-                <div className='flex gap-2 items-center'>
+                <Link to={"/dashboard"}>
+                <div className='flex gap-2 items-center cursor-pointer'>
                     <img src={desktop} alt="" />
                     <p className='hidden md:block lg:block'>Your Dashboard</p>
                 </div>
+                </Link>
 
                 <div>Checkout</div>
             </div>
