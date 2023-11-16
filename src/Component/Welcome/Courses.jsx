@@ -4,9 +4,12 @@ import timerIcon from '../Assests/timerIcon.png'
 import jobIcon from '../Assests/jobIcon.png'
 import collegeIcon from '../Assests/collegeWorking.png'
 import discount from '../Assests/percentage.png'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Courses = ({eachCourse}) => {
+
+    const navigate=useNavigate();
+
   return (
     <>
     <div className='w-full mt-8 p-2 lg:pt-3 lg:px-4 pb-3 rounded-xl bg-gray-800'>
@@ -45,9 +48,9 @@ const Courses = ({eachCourse}) => {
         </div>
 
         <div className='flex justify-center gap-2 lg:gap-4 items-center mt-2'>
-            <Link to={"explore"}>
-            <button className='bg-yellow-500 font-semibold px-4 md:px-6 text-sm lg:px-8 py-2 rounded-md hover:bg-yellow-600'>Enroll Now</button>
-            </Link>
+            <button
+            onClick={()=>{navigate('/explore',{replace:true, state:{eachCourse} })}}
+            className='bg-yellow-500 font-semibold px-4 md:px-6 text-sm lg:px-8 py-2 rounded-md hover:bg-yellow-600'>Enroll Now</button>
             <i className="fa-solid fa-cart-shopping text-2xl"></i>
             <button className='bg-yellow-500 font-semibold px-4 md:px-6 text-sm lg:px-8 py-2 rounded-md hover:bg-yellow-600'>Add to Cart</button>
         </div>

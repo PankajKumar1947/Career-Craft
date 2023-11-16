@@ -4,6 +4,8 @@ import Navbar1 from '../Component/Navbar/Navbar1'
 import Navbar2 from '../Component/Navbar/Navbar2'
 
 const Explore = () => {
+
+  
   return (
     <>
         <Navbar1/>

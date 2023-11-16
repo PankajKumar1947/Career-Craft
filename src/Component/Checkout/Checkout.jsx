@@ -2,10 +2,15 @@ import React from 'react'
 import checkoutImage from '../Assests/checkoutImage.png'
 import Navbar1 from '../Navbar/Navbar1'
 import Navbar2 from '../Navbar/Navbar2'
+import { useLocation } from 'react-router-dom'
 
 const Checkout = () => {
     let originalPrice=7000;
-    let Discount=3000;
+
+    const location=useLocation();
+    console.log(location.state)
+    const checkoutData=location.state.checkoutData;
+    const discount=checkoutData.originalPrice-checkoutData.currentPrice;
   return ( 
     <>
         <Navbar1/>
@@ -14,7 +19,7 @@ const Checkout = () => {
             <div className='flex justify-between gap-3'>
                 <img src={checkoutImage} alt="" className='w-[25%] hidden md:block lg:block'/>
                 <div className='flex flex-col justify-around'>
-                    <h1 className='text-xl font-bold '>Decode Data Science with Machine Learning 1.0</h1>
+                    <h1 className='text-xl font-bold '>{checkoutData.title}</h1>
                     <div className='flex items-center flex-col lg:flex-row  mt-2 gap-4 rounded-md'>
                         <h2 className='text-red-600 font-bold'>Have any coupen ?</h2>
                         <div className='relative  flex-1 bg-white rounded-md'>
@@ -28,16 +33,16 @@ const Checkout = () => {
             <div className='bg-white mt-5 rounded-md flex flex-col gap-1 py-3'>
                 <div className='flex justify-between px-4'>
                     <p className='font-bold'>Sub Total:</p>
-                    <p className='text-gray-500'>₹{originalPrice}</p>
+                    <p className='text-gray-500'>₹{checkoutData.originalPrice}</p>
                 </div>
                 <div className='flex justify-between px-4'>
                     <p className='font-bold'>Discount:</p>
-                    <p className='text-red-500'>- ₹{Discount}</p>
+                    <p className='text-red-500'>- ₹{discount}</p>
                 </div>
                 <div className='h-[1px] bg-gray-800 mx-4 mt-2'></div>
                 <div className='flex justify-between px-4'>
                     <p className='font-bold text-green-500'>Total:</p>
-                    <p className='text-green-400'>₹{originalPrice-Discount}</p>
+                    <p className='text-green-400'>₹{checkoutData.currentPrice}</p>
                 </div>
             </div>
 
