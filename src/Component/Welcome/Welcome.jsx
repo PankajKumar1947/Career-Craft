@@ -8,7 +8,6 @@ import icon2 from '../Assests/icon2.png'
 import icon3 from '../Assests/icon3.png'
 import icon4 from '../Assests/icon4.png'
 import OurCourses from './OurCourses'
-import { Link } from 'react-router-dom'
 
 const Welcome = () => {
   return (
@@ -24,11 +23,11 @@ const Welcome = () => {
             {/* right */}
             <div className=''>
                 <h1 className='text-3xl text-center'>Get Started with Career Craft Now !</h1>
-                <p className='lg:px-10  mt-3 text-yellow-200'>"Career Craft: Yur Gateway to Data Science Excellence! Explore our comprehensive data science course tailored for success. Dive into the world of data analytics, machine learning, and AI with expert guidance. Start your journey to a lucrative data science career today!"</p>
-                <Link to={"explore"}><div className=' mt-8 bg-yellow-500 cursor-pointer hover:bg-yellow-600 text-center mx-8 rounded-md'>
+                <p className='lg:px-10  mt-3 text-[#F5FDB6]'>"Career Craft: Yur Gateway to Data Science Excellence! Explore our comprehensive data science course tailored for success. Dive into the world of data analytics, machine learning, and AI with expert guidance. Start your journey to a lucrative data science career today!"</p>
+                <div className=' mt-8 bg-[#FCFB00] cursor-pointer hover:bg-[#c2c262] text-center mx-8 rounded-md'>
                      <button className=' shadow-md  py-3 text-black font-semibold'>Examine Courses</button>
                 </div>
-                </Link>
+                
 
                 <div className='lg:px-10  mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-between'>
                     <div className='flex gap-3 items-center'>

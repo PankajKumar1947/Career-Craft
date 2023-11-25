@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Navbar2 = () => {
   return (
     <>
-        <div className=' max-w-[95%] gap-4 mx-auto px-3 py-1 rounded-md  bg-gray-100 text-black '>
+        <div className=' max-w-[95%] gap-4 mx-auto px-3 py-1 rounded-md  bg-[#F2F2F2] text-black '>
             <div className='flex justify-around items-center'>
                 <div className='flex gap-2 items-center'>
                     <p>Courses</p>
