@@ -35,7 +35,7 @@ const ExploreCourse = () => {
   return (
     <>
         <div className='max-w-[1000px] mx-auto px-3'>
-            <div className='max-w-[500px] md:max-w-full lg:max-w-full mx-auto flex justify-around  mt-8 flex-wrap bg-yellow-500 md:bg-transparent lg:bg-transparent rounded-lg py-2 gap-3'>
+            <div className='max-w-[500px] md:max-w-full lg:max-w-full mx-auto flex justify-around  mt-8 flex-wrap bg-[#FCFB00] md:bg-transparent lg:bg-transparent rounded-lg py-2 gap-3'>
                 {/* left */}
                 <div className='w-full md:w-[35%] lg:w-[35%] relative h-[180px] lg:h-[200px] px-2'>
                     <img src={video1} alt="" className='w-full h-[100%] lg:h-[110%] rounded-2xl' />
@@ -43,7 +43,7 @@ const ExploreCourse = () => {
                     <img src={play} alt="" className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-105' />
                 </div>
                 {/* right */}
-                <div className='border-2 w-full md:w-[33%] lg:w-[33%] lg:border-gray-400 md:border-gray-400 border-none rounded-md flex flex-col justify-around px-4 bg-yellow-500 text-black '>
+                <div className='border-2 w-full md:w-[33%] lg:w-[33%] lg:border-gray-400 md:border-gray-400 border-none rounded-md flex flex-col justify-around px-4 bg-[#FCFB00] text-black '>
                     <div className='flex gap-3 items-center '>
                         <img src={duration1} alt="" className='w-[45px]' />
                         <p className='text-2xl font-bold'>{eachCourse.duration}</p>
@@ -81,7 +81,7 @@ const ExploreCourse = () => {
             <div className='h-[50px] flex justify-center items-center gap-5 mt-2'>
                 <button
                 onClick={()=>{navigate('/explore/enroll',{replace:false,state:{checkoutData}})}}
-                className='bg-yellow-500 hover:bg-yellow-600 text-md font-semibold px-8 py-2 rounded-md text-black'>Enroll Now</button>
+                className='bg-[#FCFB00] hover:bg-[#b9b959] text-md font-semibold px-8 py-2 rounded-md text-black'>Enroll Now</button>
                 
             </div>
     
