@@ -3,11 +3,11 @@ import React from 'react'
 const MyLearning = () => {
   return (
     <>
-        <div className="w-[40%] flex gap-3 bg-white text-black py-2 px-2 rounded-md cursor-pointer">
+        <div className="w-full lg:w-[40%] flex gap-3 bg-white text-black py-2 px-2 rounded-md cursor-pointer">
             <div className="w-[36%]">
                 <img src="https://images.pexels.com/photos/5303516/pexels-photo-5303516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="rounded-md"/>
             </div>
-            <div className="w-[80%]">
+            <div className="w-[80%] flex flex-col">
                 <div className="w-full flex justify-between items-center ">
                     <div>
                         <h2 className="font-semibold">Become a Data Scientist</h2>
