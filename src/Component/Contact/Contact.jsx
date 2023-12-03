@@ -7,7 +7,7 @@ const Contact = () => {
     <div className='text-black max-w-[820px] border-2 mx-auto bg-white flex gap-4 justify-center  px-4 py-4 flex-wrap'
     id="customBg">
         {/* left */}
-        <div className='w-[42%] border-[1px] border-gray-400  rounded-2xl px-2 mt-4 pt-4  flex flex-col gap-1 justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  '>
+        <div className='w-full md:w-[42%] border-[1px] border-gray-400  rounded-2xl px-2 mt-4 pt-4  flex flex-col gap-1 justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  '>
             <h1 className='text-2xl font-bold px-3 tracking-widest'>FEEL FREE TO ASK <br /> ANYTHING 😊 </h1>
             <div className='flex justify-between items-center mt-4'>
                 <h2>Full Name</h2>
@@ -30,7 +30,7 @@ const Contact = () => {
             </div>
         </div>
         {/* right */}
-        <div className='flex-1'>
+        <div className='flex-1 hidden md:block'>
             <h1 className='text-5xl text-black font-bold'>Contact Us</h1>
             <p className='mt-4 text-gray-700'>Welcome to Career Craft! We are here to assit you with any inquiries you might have. Whether you need information about our courses, have a suggestion to share, or encounter any issues while navigating our platform, please don't hesitate to get in touch</p>
             <div className='flex gap-2 items-center mt-4 '>

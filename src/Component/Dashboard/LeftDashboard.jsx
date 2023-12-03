@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LeftDashboard = () => {
   return (
@@ -24,7 +25,7 @@ const LeftDashboard = () => {
                 </div>
                 <div className="flex flex-col gap-1 items-center">
                     <i className="fa-solid fa-user"></i>
-                    <p className="text-sm">Profile</p>
+                    <Link to={"/dashboard/profile"}><p className="text-sm">Profile</p></Link>
                 </div>
                 
                 

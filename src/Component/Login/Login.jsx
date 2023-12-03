@@ -13,7 +13,7 @@ const Login = () => {
                 </div>
             </div>
             <div className='text-white max-w-[520px] mx-auto mt-4 lg:mt-0 bg-gray-500 bg-opacity-40 rounded-md p-2'>
-                <h1 className='text-center text-2xl font-semibold'>Welcome back to Data Science</h1>
+                <h1 className='text-center text-2xl font-semibold'>Welcome back Mr.</h1>
                 <p className='text-center mt-3 '>Sign in to explore our courses and career opportunities</p>
                 {/* input box */}
                 <div className='flex flex-col justify-center items-center  mt-9 gap-5 text-green-600 font-semibold'>

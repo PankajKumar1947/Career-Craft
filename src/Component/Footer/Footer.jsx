@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../Assests/logo.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -38,7 +39,9 @@ const Footer = () => {
                             <a className='hover:underline cursor-pointer underline-offset-2'>Privay policy</a>
                         </div>
                         <div className='flex flex-col gap-2'>
+                            <Link to={"/contact"}>
                             <a className='hover:underline cursor-pointer underline-offset-2'>Contact us</a>
+                            </Link>
                             <a className='hover:underline cursor-pointer underline-offset-2'>Job assurance</a>
                             <a className='hover:underline cursor-pointer underline-offset-2'>Terms and condition</a>
                         </div>

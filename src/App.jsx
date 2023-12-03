@@ -7,6 +7,8 @@ import Dashboard from './Pages/Dashboard'
 import Explore from './Pages/Explore'
 import Checkout from './Component/Checkout/Checkout'
 import Layout from './Component/Layout'
+import Profile from './Component/Profile/Profile'
+import Contact from './Component/Contact/Contact'
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
                 <Route path='/signup' element={<SignUp/>}/>
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/dashboard' element={<Dashboard/>}/>
+                <Route path='/dashboard/profile' element={<Profile/>}/>
+                <Route path='/contact'element={<Contact/>}/>
             </Routes>
         </BrowserRouter>
       
