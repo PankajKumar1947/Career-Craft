@@ -9,6 +9,7 @@ import Checkout from './Component/Checkout/Checkout'
 import Layout from './Component/Layout'
 import Profile from './Component/Profile/Profile'
 import Contact from './Component/Contact/Contact'
+import AllCourses from './Component/AllCourses/AllCourses'
 
 function App() {
 
@@ -21,12 +22,14 @@ function App() {
                 <Route path='' element={<Home/>} />
                 <Route path='/explore' element={<Explore/>}/>
                 <Route path='/explore/enroll' element={<Checkout/>}/>
+                <Route path='/contact'element={<Contact/>}/>
+                <Route path='/courses' element={<AllCourses/>}/>
                 </Route>
                 <Route path='/signup' element={<SignUp/>}/>
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/dashboard' element={<Dashboard/>}/>
                 <Route path='/dashboard/profile' element={<Profile/>}/>
-                <Route path='/contact'element={<Contact/>}/>
+                
             </Routes>
         </BrowserRouter>
       

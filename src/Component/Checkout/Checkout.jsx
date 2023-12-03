@@ -1,7 +1,5 @@
 import React from 'react'
 import checkoutImage from '../Assests/checkoutImage.png'
-import Navbar1 from '../Navbar/Navbar1'
-import Navbar2 from '../Navbar/Navbar2'
 import { useLocation } from 'react-router-dom'
 
 const Checkout = () => {
@@ -13,8 +11,6 @@ const Checkout = () => {
     const discount=checkoutData.originalPrice-checkoutData.currentPrice;
   return ( 
     <>
-        <Navbar1/>
-        <Navbar2/>
         <div className='max-w-[700px] mt-8 mx-3 md:mx-auto lg:mx-auto p-4 px-2 lg:px-5  lg:pt-8 shadow-md shadow-black rounded-xl bg-gradient-to-br from-yellow-300  to-black text-black'>
             <div className='flex justify-center gap-3'>
                 <img src={checkoutImage} alt="" className='w-[200px] h-[150px] hidden md:block lg:block'/>

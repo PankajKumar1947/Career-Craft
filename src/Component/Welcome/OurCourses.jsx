@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Courses from './Courses'
 import unchecked from '../Assests/circle.png'
 import courseList from '../DataFolder/course'
+import { Link } from 'react-router-dom'
 
 const OurCourses = () => {
   let [current,setCurrent]=useState(0);
@@ -34,8 +35,10 @@ const OurCourses = () => {
                 onClick={()=>setCategory("Live")}
                 className={`${category==="Live" ? "bg-green-300 " : "bg-white"} px-7 py-1 rounded-sm shadow-md  hover:bg-green-400 cursor-pointer`}
                 >Live</li>
+                <Link to={"/courses"}>
                 <li 
                 className='px-3 py-1 bg-white rounded-sm shadow-md  hover:bg-green-400 cursor-pointer'>View All </li>
+                </Link>
             </ul>
         </div>
 
