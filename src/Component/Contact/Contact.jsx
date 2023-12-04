@@ -45,6 +45,7 @@ const Contact = () => {
             <div className='mt-4 '>Our dedicated team is committed to providing you with the best educational exprerience possible. Feel free to reach out, and we'll be happy to help</div>
 
             <div className='my-4 '>Thank you for choosing Career Craft for your learning journey</div>
+            
         </div>
     </div>
   )
