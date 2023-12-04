@@ -7,7 +7,6 @@ const AllCourses = () => {
 
   return (
     <>
-       <div>
         <div className='w-full flex flex-col items-center'>
                 {courseArray.map((crs, index) => (
                 <div
@@ -16,7 +15,6 @@ const AllCourses = () => {
                 </div>
                 ))}
             </div>
-       </div>
        
     </>
   )
