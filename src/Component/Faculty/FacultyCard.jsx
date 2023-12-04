@@ -6,7 +6,7 @@ const FacultyCard = ({facultyList}) => {
   return (
     <>
       <div className=' flex flex-col gap-1 justify-center items-center py-4 bg-gradient-to-br border-[1.5px] rounded-3xl '>
-          <img src={facultyList.img} alt="" className='w-[50%]'/>
+          <img src={facultyList.img} alt="" className='w-[50%] rounded-full'/>
           <h1 className='text-2xl font-semibold'>{facultyList.name}</h1>
           <p className='text-gray-300'>{facultyList.domain}</p>
 

@@ -1,4 +1,7 @@
 import facultyProfile from '../Assests/FacultyProfile.png'
+import faculty1 from '../Assests/faculty1.jpg'
+import faculty2 from '../Assests/faculty2.jpg'
+import faculty3 from '../Assests/faculty3.jpg'
 
 const facultyList=[
     {
@@ -12,7 +15,7 @@ const facultyList=[
     },
     {
         id:102,
-        img:facultyProfile,
+        img:faculty1,
         name:'Chris Hames',
         domain:"Artificial Integillence",
         workExp:5,
@@ -21,27 +24,18 @@ const facultyList=[
     },
     {
         id:102,
-        img:facultyProfile,
-        name:'Chris Hames',
-        domain:"Artificial Integillence",
+        img:faculty2,
+        name:'Hema',
+        domain:"Full Stack Web",
         workExp:5,
         teachingExp:3,
-        desc:"Artificial Integillence | Google, Microsoft | Business Insights | AI Specilaist"
+        desc:" Google, Microsoft | Business Insights | AI Specilaist"
     },
     {
         id:102,
-        img:facultyProfile,
-        name:'Chris Hames',
-        domain:"Artificial Integillence",
-        workExp:5,
-        teachingExp:3,
-        desc:"Artificial Integillence | Google, Microsoft | Business Insights | AI Specilaist"
-    },
-    {
-        id:102,
-        img:facultyProfile,
-        name:'Chris Hames',
-        domain:"Artificial Integillence",
+        img:faculty3,
+        name:'Jon Doe',
+        domain:"DS & Algorithm",
         workExp:5,
         teachingExp:3,
         desc:"Artificial Integillence | Google, Microsoft | Business Insights | AI Specilaist"
