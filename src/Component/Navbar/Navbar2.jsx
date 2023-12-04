@@ -5,11 +5,11 @@ import { Link, NavLink } from 'react-router-dom'
 const Navbar2 = () => {
   return (
     <>
-        <div className=' max-w-[95%] gap-4 mx-auto px-3 py-1 rounded-md  bg-[#F2F2F2] text-black '>
+        <div className=' max-w-[95%] gap-4 mx-auto px-3  rounded-md  bg-[#F2F2F2] text-black sticky top-0 z-10'>
             <div className='flex justify-around items-center'>
                 <div className='flex gap-2 items-center'>
                     <NavLink to={"/"}
-                    className={({isActive})=>` ${isActive ? 'text-blue-500 font-semibold underline' : 'text-black'}`}>
+                    className={({isActive})=>` ${isActive ? 'bg-black text-white px-4 py-1 rounded-2xl' : 'text-black'}`}>
                         Home
                     </NavLink>
                 </div>
@@ -24,7 +24,7 @@ const Navbar2 = () => {
                 
 
                 <NavLink to={"/courses"}
-                    className={({isActive})=>` ${isActive ? 'text-blue-500 font-semibold underline' : 'text-black'}`}>
+                    className={({isActive})=>` ${isActive ? 'bg-black text-white px-4 py-1 rounded-2xl' : 'text-black'}`}>
                         Courses
                 </NavLink>
             </div>

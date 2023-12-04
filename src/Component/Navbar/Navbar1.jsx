@@ -7,7 +7,7 @@ const Navbar1 = () => {
     <>
         <div className='flex max-w-[95%] gap-4 mx-auto  py-1 items-center justify-between'>
           <Link to={"/"}>
-          <div><img src={logo} alt="" /></div>
+          <div><img src={logo} alt="" className='max-h-[60px]' /></div>
           </Link>
             
             <div className='bg-gray-100 w-full relative rounded-md py-1 hidden md:block lg:block'>

@@ -12,7 +12,7 @@ const Courses = ({eachCourse}) => {
 
   return (
     <>
-    <div className=' mt-8 p-3 lg:pt-3 lg:px-4 pb-3 rounded-xl bg-gray-800 max-w-[300px] md:max-w-[700px]  lg:max-w-[700px] '>
+    <div className=' mt-8 p-3 lg:pt-3 lg:px-4 pb-3 rounded-xl bg-gray-800 w-[90vw] md:max-w-[700px]  lg:max-w-[700px] '>
         <div className='p-2 lg:p-3 rounded-xl flex justify-between  flex-col md:flex-row lg:flex-row md:gap-3  bg-[#FCFB00] '>
             <div className=' w-[100%] md:w-[50%]  lg:w-[50%] '>
                 <img src={eachCourse.img} alt="" className='h-[150px] md:h-[200px] lg:h-[200px]  w-[100%] rounded-t-xl md:rounded-xl lg:rounded-xl ' />

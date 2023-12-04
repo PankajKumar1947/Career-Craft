@@ -8,6 +8,7 @@ import icon2 from '../Assests/icon2.png'
 import icon3 from '../Assests/icon3.png'
 import icon4 from '../Assests/icon4.png'
 import OurCourses from './OurCourses'
+import Join from '../ExploreCourse/Join'
 
 const Welcome = () => {
   return (
@@ -65,6 +66,10 @@ const Welcome = () => {
 
         {/* Our course */}
         <OurCourses/>
+
+        <div>
+            <Join/>
+        </div>
     </>
   )
 }
