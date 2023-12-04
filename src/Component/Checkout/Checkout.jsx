@@ -11,25 +11,25 @@ const Checkout = () => {
     const discount=checkoutData.originalPrice-checkoutData.currentPrice;
   return ( 
     <>
-        <div className='max-w-[700px] mt-8 mx-3 md:mx-auto lg:mx-auto p-4 px-2 lg:px-5  lg:pt-8 shadow-md shadow-black rounded-xl bg-gradient-to-br from-yellow-300  to-black text-black'>
+        <div className='max-w-[700px] mt-8 mx-3 md:mx-auto lg:mx-auto p-4 px-2 lg:px-5  lg:pt-8 shadow-md shadow-black rounded-xl bg-gray-700 text-white'>
             <div className='flex justify-center gap-3'>
                 <img src={checkoutImage} alt="" className='w-[200px] h-[150px] hidden md:block lg:block'/>
                 <div className='flex flex-col justify-around flex-1'>
                     <h1 className='text-xl font-bold  '>{checkoutData.title}</h1>
                     <div className='flex items-center flex-col lg:flex-row  mt-2 gap-4 rounded-md'>
-                        <h2 className='text-red-600 font-bold'>Have any coupen ?</h2>
-                        <div className='relative w-full   bg-white rounded-md'>
-                            <input type="text" className='w-full px-2 py-1 rounded-md placeholder-text-xs' placeholder='Enter your coupen code ' />
+                        <h2 className='text-green-500 font-bold'>Have any coupen ?</h2>
+                        <div className='relative w-full   rounded-md'>
+                            <input type="text" className='w-full px-2 py-1 rounded-md placeholder-text-xs text-black outline-0' placeholder='Enter your coupen code ' />
                             <button className='absolute right-0 top-0 bg-green-500 hover:bg-green-600 text-white rounded-md px-3 py-1'>Apply</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='bg-white mt-5 rounded-md flex flex-col gap-1 py-3'>
+            <div className=' mt-5 rounded-md flex flex-col gap-1 py-3'>
                 <div className='flex justify-between px-4'>
                     <p className='font-bold'>Sub Total:</p>
-                    <p className='text-gray-500'>₹{checkoutData.originalPrice}</p>
+                    <p className='text-gray-100'>₹{checkoutData.originalPrice}</p>
                 </div>
                 <div className='flex justify-between px-4'>
                     <p className='font-bold'>Discount:</p>
@@ -43,7 +43,7 @@ const Checkout = () => {
             </div>
 
             <div className='flex justify-center items-center my-4'>
-                <button className='bg-yellow-300 hover:bg-yellow-600 w-[70%] lg:w-[40%]  mt-4 py-2 rounded-md '>Proceed To Checkout</button>
+                <button className='bg-green-400 hover:bg-green-500 text-black w-[70%] lg:w-[40%]  mt-4 py-2 rounded-md '>Proceed To Checkout</button>
             </div>
             
         </div>
