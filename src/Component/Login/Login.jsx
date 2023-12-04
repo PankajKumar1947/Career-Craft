@@ -9,7 +9,7 @@ const Login = () => {
             <div className='flex justify-between items-center'>
                 <Link to={"/"}><img src={logo} alt="" className='cursor-pointer  h-[50px] md:h-[70px]'/></Link>
                 <div className='text-xl rounded-full'>
-                    <Link to={"/"}><i class="fa-solid fa-house"></i></Link>
+                    <Link to={"/"}><i className="fa-solid fa-house"></i></Link>
                 </div>
             </div>
             <div className='text-white max-w-[520px] mx-auto mt-4 lg:mt-0 bg-gray-500 bg-opacity-40 rounded-md p-2'>
