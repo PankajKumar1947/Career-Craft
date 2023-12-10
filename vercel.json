@@ -35,6 +35,10 @@
         {
             "src":"/explore/enroll",
             "dest":"/"
+        },
+        {
+            "src":"*",
+            "dest":"/"
         }
     ]
 }

@@ -10,12 +10,12 @@ import Layout from './Component/Layout'
 import Profile from './Component/Profile/Profile'
 import Contact from './Component/Contact/Contact'
 import AllCourses from './Component/AllCourses/AllCourses'
+import NotFound from './Component/NotFound/NotFound'
 
 function App() {
 
   return (
-    <>
-    
+    <> 
     <BrowserRouter>
             <Routes>
               <Route path='/' element={<Layout/>}>
@@ -24,6 +24,7 @@ function App() {
                 <Route path='/explore/enroll' element={<Checkout/>}/>
                 <Route path='/contact'element={<Contact/>}/>
                 <Route path='/courses' element={<AllCourses/>}/>
+                <Route path='*' element={<NotFound/>}/> 
                 </Route>
                 <Route path='/signup' element={<SignUp/>}/>
                 <Route path='/login' element={<Login/>}/>
