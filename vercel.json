@@ -1,0 +1,32 @@
+{
+    "routes":[
+        {
+            "src":"/",
+            "dest":"/"
+        },
+        {
+            "src":"/explore",
+            "dest":"/"
+        },
+        {
+            "src":"/contact",
+            "dest":"/"
+        },
+        {
+            "src":"/courses",
+            "dest":"/"
+        },
+        {
+            "src":"/signup",
+            "dest":"/"
+        },
+        {
+            "src":"/login",
+            "dest":"/"
+        },
+        {
+            "src":"/dashboard",
+            "dest":"/"
+        }
+    ]
+}
