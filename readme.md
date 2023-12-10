@@ -1,5 +1,6 @@
 ### <u>Career-Craft Frontend Project</u>
 - Career-craft,  A dynamic web application built using React.js and styled with Tailwind CSS. This project is a frontend layout of Career-Craft with working functionalities.
+- I have handled the data though the json response.
 - Later, I will integrate backend in this project.
 
 ### Demo link:
