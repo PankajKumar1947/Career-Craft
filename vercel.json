@@ -27,6 +27,14 @@
         {
             "src":"/dashboard",
             "dest":"/"
+        },
+        {
+            "src":"/dashboard/profile",
+            "dest":"/"
+        },
+        {
+            "src":"/explore/enroll",
+            "dest":"/"
         }
     ]
 }
